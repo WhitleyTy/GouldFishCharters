@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -21,6 +22,11 @@ body {
   font-family: system-ui, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ===== HERO HEADER ===== */
@@ -78,6 +84,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 28px;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -249,6 +256,76 @@ footer {
   padding: 40px 5%;
   text-align: center;
 }
+
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+
+@media (max-width: 768px) {
+
+  .topbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 5%;
+    text-align: center;
+  }
+
+  .brand {
+    font-size: 22px;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  nav a.cta {
+    padding: 10px 18px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .hero div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 50px 5%;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+}
+
 </style>
 
 </head>
@@ -342,8 +419,8 @@ footer {
 <section id="faq">
 <h2 class="section-title">FAQ</h2>
 
-<details><summary>What should we bring?</summary><p>Sunscreen, snacks, drinks for fishing trips, everything else provided. Towels, beach chairs, small coolers  and water shoes are great for a enjoyable day on the sand</p></details>
-<details><summary>Can kids come?</summary><p>Absolutely! Inshore and nearshore trips are great for families. Exploring the estuaries, shell hunting, clamming  and more.</p></details>
+<details><summary>What should we bring?</summary><p>Sunscreen, snacks, drinks for fishing trips, everything else provided. Towels, beach chairs, small coolers and water shoes are great for a enjoyable day on the sand</p></details>
+<details><summary>Can kids come?</summary><p>Absolutely! Inshore and nearshore trips are great for families. Exploring the estuaries, shell hunting, clamming and more.</p></details>
 <details><summary>Bad weather?</summary><p>Trips are rescheduled or refunded if unsafe.</p></details>
 
 </section>
